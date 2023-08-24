@@ -1,0 +1,45 @@
+{
+  "name": "jochenkappel/smart-textify",
+  "description": "Use OpenAI to modify a text",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Jochenkappel\\SmartTextify\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jochenkappel\\SmartTextify\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Jochenkappel\\SmartTextify\\SmartTextifyServiceProvider"
+      ]
+    },
+    "aliases": {
+      "SmartTextifier": "Jochenkappel\\SmartTextify\\Facades\\SmartTextEditor"
+    }
+  },
+  "authors": [
+    {
+      "name": "Jochen Kappel",
+      "email": "jochen.kappel@gallloverde.de"
+    }
+  ],
+  "require-dev": {
+    "orchestra/testbench": "^6.33",
+    "phpunit/phpunit": "^9.6"
+  },
+  "require": {
+    "openai-php/client": "^0.6.4",
+    "symfony/http-client": "^6.2"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}
