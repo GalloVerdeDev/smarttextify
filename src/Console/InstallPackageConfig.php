@@ -29,7 +29,7 @@ class InstallPackageConfig extends Command
             }
         }
 
-        $this->info('Installed BlogPackage');
+        $this->info('Installed SmartTextify');
     }
 
     private function configExists($fileName)
