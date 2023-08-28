@@ -23,7 +23,7 @@ SmartTextify offers these methods to edit your text
 Install SmartTextify with [composer](https://getcomposer.org/doc/00-intro.md):
 
 ```
-composer require jochenkappel/smart-textify
+composer require galloverdedev/smart-textify
 ```
 
 ## Configuration
@@ -70,7 +70,7 @@ composer test
 Using the Facade
 
 ```php
-use Jochenkappel\SmartTextify\Facades\SmartTextEditor;
+use GalloVerdeDev\SmartTextify\Facades\SmartTextEditor;
 
 ...
 

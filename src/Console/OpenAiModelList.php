@@ -1,6 +1,6 @@
 <?php
 
-namespace Jochenkappel\SmartTextify\Console;
+namespace GalloVerdeDev\SmartTextify\Console;
 
 use Illuminate\Console\Command;
 use OpenAI;
@@ -8,19 +8,19 @@ use OpenAI;
 
 class OpenAIModelList extends Command
 {
-    protected $signature = 'smarttextify:get-openai-models';
+  protected $signature = 'smarttextify:get-openai-models';
 
-    protected $description = 'Get all suported models';
-    public function handle()
-    {
-        $myApiKey = config('smarttextify.api_key');
-        $client   = OpenAI::client($myApiKey);
+  protected $description = 'Get all suported models';
+  public function handle()
+  {
+    $myApiKey = config('smarttextify.api_key');
+    $client   = OpenAI::client($myApiKey);
 
-        // get all models
-        $response = $client->models()->list();
+    // get all models
+    $response = $client->models()->list();
 
-        foreach ($response->data as $result) {
-            $this->info($result->id);
-        }
+    foreach ($response->data as $result) {
+      $this->info($result->id);
     }
+  }
 }
