@@ -1,14 +1,14 @@
 <?php
 
-namespace Jochenkappel\SmartTextify\Facades;
+namespace GalloVerdeDev\SmartTextify\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 class SmartTextEditor extends Facade
 {
 
-    protected static function getFacadeAccessor()
-    {
-        return 'smarttexteditor';
-    }
+  protected static function getFacadeAccessor()
+  {
+    return 'smarttexteditor';
+  }
 }
