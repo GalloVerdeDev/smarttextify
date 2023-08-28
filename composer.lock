@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "71123b460995b89778b337f0921eb51f",
+    "content-hash": "5cf864ec64630c6bb889f667bbd2b92b",
     "packages": [
         {
             "name": "openai-php/client",

@@ -1,6 +1,6 @@
 <?php
 
-namespace JochenkGalloVerdeDevappel\SmartTextify\Tests;
+namespace GalloVerdeDev\SmartTextify\Tests;
 
 use GalloVerdeDev\SmartTextify\SmartTextifyServiceProvider;
 
